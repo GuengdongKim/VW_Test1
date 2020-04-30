@@ -1,0 +1,245 @@
+/*COMMON*/
+a{
+    text-decoration: none;
+}
+
+body{
+    background: #409dad;
+}
+.body__container{
+    font-family: 'Nanum Gothic','Noto Sans KR','Nanum Gothic Coding', Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size : 16px;
+    font-weight: 400;
+    color : rgb(69, 78, 117);
+    position: absolute;
+    background: #409dad;
+    z-index: 1;
+}
+.body__container::before{
+    background: url(../images/bg-deco00.png) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: bottom left;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+/*--icons--*/
+.icon1,.icon2,.icon3,.icon4,.icon5,.icon6{
+	position: absolute;
+    left: 51px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.83);
+    width: 22px;
+}
+.icon1{
+	top: 12px;
+}
+
+/*HEADER*/
+.header {
+    background-color: rgb(243, 243, 243);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+}
+.header__container {
+    width : 100%;
+    display: flex;
+}
+.logo__container{
+    width:50px;
+    height: 30px;
+    display: inline-block;
+    align-self: center;
+    margin-left: 3vw;
+}
+.logo__container:hover{
+    filter: grayscale(80%);
+}
+
+.header__menu-group{
+    margin : 1.3rem 2rem;
+    width: 100%;
+}
+.header__menu{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu-item{
+    font-size: 18px;
+    font-weight: 600;
+    color: #494e58;
+    margin-left: 2vw;   
+}
+
+.menu:hover{
+    color: rgb(7, 153, 182);
+}
+#log-inout{
+    padding : 5px 10px;
+    border-radius: 1rem;
+    border: 2px solid rgb(7, 153, 182);
+    color: rgb(7, 153, 182);
+    transition: .5s;
+    order: -1;
+}
+
+#log-inout:hover{
+    background-color: rgb(7, 153, 182);
+    color: #fff;
+    transform: rotate(1.1);
+}
+
+/* ANIMATION */
+
+.fadeinout{
+    animation: fadeinout 1s;
+    -webkit-animation: fadeinout 1s;
+    -moz-animation: fadeinout 1s;
+    -o-animation: fadeinout 1s;    
+}
+
+@-webkit-keyframes fadeinout {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadeinout {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-o-keyframes fadeinout {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.content__container{
+    background-color:rgb(252, 252, 252);
+    box-shadow: 0 8px 17px rgba(104, 102, 102, 0.479);
+    border-radius: 1rem;
+    margin: 5% auto 5%;
+    padding: 3%;
+    max-width: 948px;
+    margin : 10rem auto;
+    min-width: 210px;
+    min-height: 400px;
+
+}
+#container {
+    margin: 3% auto;
+    padding: 8% 5%;
+    border : 1px solid #dee2e6;
+    border-radius: 1rem;
+}
+#container .content__title{
+    text-align: center;
+    font-size: 25px;
+    font-style: 'Nanum Gothic';
+    font-weight: bolder;
+    margin: 10px;    
+}
+#container .content__main {
+    overflow: auto;
+    overflow-y: scroll;
+    max-width: 1000px;
+    height: 200px;
+    margin: 30px auto;
+    border: solid 1px black;
+    border-radius: 0.3rem;
+    padding: 3%;
+    line-height: 1.5rem;
+}
+
+#container label{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.checkbox {
+    display: inline;
+    margin: 0px;
+}
+
+#container p {
+    text-align: initial;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#container h3
+{
+    font-weight: bold;
+}
+#container .content__line
+{
+    margin-top: 20px;
+}
+input[type="submit"] {
+    color: white;
+    background: cornflowerblue;
+    border: none;
+    padding: 14px 50px;
+    font-size: 22px;
+    border-radius: 2px;
+    margin: 17px;
+	font-family: 'Lato', sans-serif;
+	cursor:pointer;
+	text-transform:uppercase;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+    -ms-transition:0.5s all;
+    
+}
+input[type="submit"]:hover {
+    background: #d9edf7;
+    color: black;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-o-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+
+/*--footer--*/
+.footer-w3  p {
+    font-size: .9em;
+    color: rgba(255, 255, 255, 0);
+}
+/*--//footer--*/
